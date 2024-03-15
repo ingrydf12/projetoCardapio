@@ -1,15 +1,20 @@
 <resources>
     <string name="app_name">projetoCardapio</string>
     <string name="logo" />
-    <string name="textCabecalho">Faça seu pedido</string>
+    <string name="textCabecalho">Cardápio</string>
     <string name="textDescriptionBanner">banner com comidas e frutos do mar como camarões</string>
 
     //entradas
-    <string name="textEntrada1">Entrada 1</string>
+    <string name="textEntradas">Entradas</string>
+    <string name="textInst">Selecione seu pedido abaixo marcando-o ou desmarcando-o.</string>
+
+    <string name="textEntrada1">Camarão ao alho e óleo</string>
     <string name="contentEntrada1">Foto de apresentação da entrada 1</string>
     <string name="iconDescription">Icone de tempo de preparo</string>
 
-    <string name="textEntrada2">Entrada 2</string>
+    <string name="textEntrada2">Lagosta</string>
     <string name="contentEntrada2">Foto de apresentação da entrada 2</string>
+
+    <string name="textEntrada3">Iscas de peixe</string>
 
 </resources>
