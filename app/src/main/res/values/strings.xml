@@ -8,7 +8,7 @@
     <string name="textEntradas">Entradas</string>
     <string name="textInst">Selecione seu pedido abaixo marcando-o ou desmarcando-o.</string>
 
-    <string name="textEntrada1">Camarão ao alho e óleo</string>
+    <string name="textEntrada1">Pesticos de camarão</string>
     <string name="contentEntrada1">Foto de apresentação da entrada 1</string>
     <string name="iconDescription">Icone de tempo de preparo</string>
 
@@ -16,5 +16,15 @@
     <string name="contentEntrada2">Foto de apresentação da entrada 2</string>
 
     <string name="textEntrada3">Iscas de peixe</string>
+    //pratos
+    <string name="textPratos">Principais</string>
+
+    <string name="textPrato1">Nhoque de camarão</string>
+
+
+    //preços
+    <string name="precoEnt1">R$49,90</string>
+    <string name="precoEnt2">R$35,00</string>
+    <string name="precoEnt3">R$40,00</string>
 
 </resources>

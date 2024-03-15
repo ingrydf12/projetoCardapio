@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F2F2F2"
+    android:background="#FFFFF"
     tools:context=".mainApresentacao">
 
     <View
@@ -51,23 +51,12 @@
         android:textColor="@color/textInst"
         android:textSize="16sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bannerView" />
 
     <!-- Adicionando o TextView "Entradas" -->
-    <TextView
-        android:id="@+id/textViewEntradas"
-        android:layout_marginLeft="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/textEntradas"
-        android:textColor="@color/mainApp"
-        android:textStyle="bold"
-        android:fontFamily="@font/inter_bold"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@id/scrollView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView" />
+
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -76,18 +65,27 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEntradas">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textViewEntradas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/textEntradas"
+                android:textColor="@color/textCategoria"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
             <!-- Primeira linha -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content">
 
                 <!-- PRIMEIRO RAPIDO -->
                 <CheckBox
@@ -95,15 +93,26 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
+                <!-- SEGUNDO MEDIO -->
+
                 <TextView
                     android:id="@+id/textEntrada1"
-                    android:layout_width="0dp"
+                    android:layout_width="80dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/textEntrada1" />
 
-                <!-- SEGUNDO MEDIO -->
+                <TextView
+                    android:id="@+id/textPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.001"
+                    android:text="@string/precoEnt1"
+                    android:gravity="center"
+                    android:textColor="@color/labelPrice"
+                    android:textStyle="bold" />
+
                 <CheckBox
                     android:id="@+id/checkEntrada2"
                     android:layout_width="wrap_content"
@@ -117,6 +126,17 @@
                     android:gravity="center"
                     android:text="@string/textEntrada2" />
 
+                <TextView
+                    android:id="@+id/textPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.001"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:text="@string/precoEnt2"
+                    android:textColor="@color/labelPrice"
+                    android:textStyle="bold" />
+
             </LinearLayout>
 
             <!-- Segunda linha | TERCEIRO LONGO -->
@@ -129,7 +149,8 @@
                 <CheckBox
                     android:id="@+id/checkEntrada3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    />
 
                 <TextView
                     android:id="@+id/textEntrada3"
@@ -138,6 +159,48 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/textEntrada3" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewPrincipal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/textPratos"
+                android:textColor="@color/textCategoria"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginTop="8dp">
+
+                <CheckBox
+                    android:id="@+id/checkPrato1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/textPrato1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/textPrato1" />
+
+                <TextView
+                    android:id="@+id/textPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/precoEnt3"
+                    android:textColor="@color/labelPrice"
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </LinearLayout>
