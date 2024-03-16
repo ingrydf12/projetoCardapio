@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnClickMe = findViewById(R.id.btentrada) as Button
+        val btnClickMe = findViewById<Button>(R.id.btentrada)
 
         btnClickMe.setOnClickListener {
             //Here MainActivity.this is a Current Class Reference (context)

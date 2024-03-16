@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">projetoCardapio</string>
-    <string name="logo" />
+    <string name="logo">logoDolphin</string>
     <string name="textCabecalho">Cardápio</string>
     <string name="textDescriptionBanner">banner com comidas e frutos do mar como camarões</string>
+
+    //interações
+    <string name="btnEnt">Entrar</string>
+    <string name="btnPedido">Pedir</string>
+    <string name="labelPreco">R$.precototal</string>
 
     //entradas
     <string name="textEntradas">Entradas</string>
@@ -16,15 +21,44 @@
     <string name="contentEntrada2">Foto de apresentação da entrada 2</string>
 
     <string name="textEntrada3">Iscas de peixe</string>
+
     //pratos
     <string name="textPratos">Principais</string>
 
     <string name="textPrato1">Nhoque de camarão</string>
+    <string name="textPrato2">Tilápia ao Molho Teriyaki</string>
+    <string name="textPrato3">Algo caro</string>
 
+    //sobremesas
+    <string name="textSobremesas">Sobremesas</string>
+    <string name="textSob1">Pudim de leite</string>
+    <string name="textSob2">Sorvete</string>
+    <string name="textSob3">Banana Summers</string>
+
+    //bebidas
+    <string name="textBebidas">Bebidas</string>
+    <string name="textBeb1">Refrigerante</string>
+    <string name="textBeb2">Chá</string>
+    <string name="textBeb3">Suco (Copo)</string>
+    <string name="textBeb4">Cerveja</string>
 
     //preços
     <string name="precoEnt1">R$49,90</string>
     <string name="precoEnt2">R$35,00</string>
     <string name="precoEnt3">R$40,00</string>
+
+    <string name="precoPrin1">R$49,90</string>
+    <string name="precoPrin2">R$60,00</string>
+    <string name="precoPrin3">R$35,00</string>
+
+    <string name="precoSob1">R$8,00</string>
+    <string name="precoSob2">R$10,00</string>
+    <string name="precoSob3">R$12,00</string>
+
+    <string name="precoBeb1">R$6,00</string>
+    <string name="precoBeb2">R$5,00</string>
+    <string name="precoBeb3">R$8,00</string>
+    <string name="precoBeb4">R$10,00</string>
+
 
 </resources>
