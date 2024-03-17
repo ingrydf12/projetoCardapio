@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".ApresentacaoApp">
+
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
@@ -13,6 +14,18 @@
         android:background="@color/mainApp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textDolphin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textDolphin"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -508,7 +521,7 @@
         android:background="@color/mainApp"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView"
         app:layout_constraintStart_toStartOf="parent" />
-
+    <!-- Label Preço -->
     <TextView
         android:id="@+id/labelTotal"
         android:layout_width="0dp"
@@ -521,7 +534,7 @@
         app:layout_constraintEnd_toStartOf="@+id/btnPedido"
         app:layout_constraintStart_toStartOf="@+id/viewFinal"
         app:layout_constraintTop_toTopOf="@+id/viewFinal" />
-
+    <!-- Botão de Pedido -->
     <Button
         android:id="@+id/btnPedido"
         android:layout_width="200dp"
@@ -534,7 +547,4 @@
         app:layout_constraintEnd_toEndOf="@+id/viewFinal"
         app:layout_constraintTop_toTopOf="@+id/viewFinal"
         app:layout_constraintVertical_bias="0.0" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

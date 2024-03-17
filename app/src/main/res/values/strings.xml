@@ -3,6 +3,7 @@
     <string name="logo">logoDolphin</string>
     <string name="textCabecalho">Cardápio</string>
     <string name="textDescriptionBanner">banner com comidas e frutos do mar como camarões</string>
+    <string name="textDolphin">Dolphin Virtual</string>
 
     //interações
     <string name="btnEnt">Entrar</string>
@@ -73,5 +74,14 @@
     <string name="precoBeb3">R$8,00</string>
     <string name="precoBeb4">R$10,00</string>
 
+    //tela extra (confirmar)
+    <string name="instConfirmar">Confirme seu pedido</string>
+    <string name="textPedido">Seu pedido:</string>
+    <string name="Obs">Observações do cliente:</string>
+    <string name="InstObs">Caso deseje alteração em relação ao pedido, digite aqui.</string>
+    <string name="btnConfirmar">Confirmar</string>
+
+   // <string name="textReturn"> </string>
+    <string name="textNull">Nada selecionado.</string>
 
 </resources>
