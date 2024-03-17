@@ -7,4 +7,9 @@
     <color name="labelPrice">#DA0000</color>
     <color name="colorButtons">#396300</color>
     <color name="textInst">#030303</color>
+
+    //icones
+    <color name="rapido">#009503</color>
+    <color name="medio">#B68F00</color>
+    <color name="demorado">#880000</color>
 </resources>

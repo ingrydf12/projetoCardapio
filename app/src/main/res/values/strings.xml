@@ -28,14 +28,10 @@
     <string name="textEntradas">Entradas</string>
     <string name="textInst">Selecione seu pedido abaixo marcando-o ou desmarcando-o.</string>
 
-    <string name="textEntrada1">Pesticos de camarão</string>
-    <string name="contentEntrada1">Foto de apresentação da entrada 1</string>
+    <string name="textEntrada1">Iscas de peixe</string>
     <string name="iconDescription">Icone de tempo de preparo</string>
-
-    <string name="textEntrada2">Lagosta</string>
-    <string name="contentEntrada2">Foto de apresentação da entrada 2</string>
-
-    <string name="textEntrada3">Iscas de peixe</string>
+    <string name="textEntrada2">Pesticos de camarão</string>
+    <string name="textEntrada3">Lagosta</string>
 
     //pratos
     <string name="textPratos">Principais</string>
@@ -81,7 +77,7 @@
     <string name="InstObs">Caso deseje alteração em relação ao pedido, digite aqui.</string>
     <string name="btnConfirmar">Confirmar</string>
 
-   // <string name="textReturn"> </string>
+   <string name="textReturn"> </string>
     <string name="textNull">Nada selecionado.</string>
 
 </resources>

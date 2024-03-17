@@ -116,21 +116,38 @@
                     android:layout_weight="1"
                     android:text="@string/textEntrada1" />
 
+                <ImageView
+                    android:id="@+id/iconeTempo"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_tempo"
+                    app:tint="@color/rapido"
+                    android:contentDescription="@string/iconDescription"/>
+
                 <TextView
                     android:id="@+id/textPrice1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.001"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoEnt1"
                     android:textColor="@color/labelPrice"
                     android:textStyle="bold" />
 
+            </LinearLayout>
+
+            <!-- Segunda linha | TERCEIRO LONGO -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <CheckBox
                     android:id="@+id/checkEnt2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
                     android:contentDescription="@string/checkDescription2" />
 
                 <TextView
@@ -138,8 +155,17 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
                     android:text="@string/textEntrada2" />
+
+                <ImageView
+                    android:id="@+id/iconeTempo2"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/medio"
+                    android:src="@drawable/ic_tempo"
+                    android:contentDescription="@string/iconDescription"/>
 
                 <TextView
                     android:id="@+id/textPrice2"
@@ -150,10 +176,8 @@
                     android:text="@string/precoEnt2"
                     android:textColor="@color/labelPrice"
                     android:textStyle="bold" />
-
             </LinearLayout>
 
-            <!-- Segunda linha | TERCEIRO LONGO -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -173,6 +197,16 @@
                     android:layout_gravity="center|start"
                     android:layout_weight="1"
                     android:text="@string/textEntrada3" />
+
+                <ImageView
+                    android:id="@+id/iconeTempo3"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/demorado"
+                    android:src="@drawable/ic_tempo"
+                    android:contentDescription="@string/iconDescription"/>
 
                 <TextView
                     android:id="@+id/textPrice3"
@@ -215,9 +249,19 @@
                     android:id="@+id/textPrato1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start|center_horizontal"
+                    android:layout_gravity="start|center"
                     android:layout_weight="1"
                     android:text="@string/textPrato1" />
+
+                <ImageView
+                    android:id="@+id/iconeTempo4"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_tempo"
+                    app:tint="@color/rapido"
+                    android:contentDescription="@string/iconDescription"/>
 
                 <TextView
                     android:id="@+id/textPrice4"
@@ -229,6 +273,13 @@
                     android:textColor="@color/labelPrice"
                     android:textStyle="bold" />
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <CheckBox
                     android:id="@+id/checkPrato2"
                     android:layout_width="wrap_content"
@@ -239,9 +290,19 @@
                     android:id="@+id/textPrato2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start|center_horizontal"
+                    android:layout_gravity="center|start"
                     android:layout_weight="1"
                     android:text="@string/textPrato2" />
+
+                <ImageView
+                    android:id="@+id/iconeTempo5"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_tempo"
+                    app:tint="@color/medio"
+                    android:contentDescription="@string/iconDescription"/>
 
                 <TextView
                     android:id="@+id/textPrice5"
@@ -273,6 +334,16 @@
                     android:layout_weight="1"
                     android:text="@string/textPrato3" />
 
+                <ImageView
+                    android:id="@+id/iconeTempo6"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/demorado"
+                    android:src="@drawable/ic_tempo"
+                    android:contentDescription="@string/iconDescription"/>
+
                 <TextView
                     android:id="@+id/textPrice6"
                     android:layout_width="0dp"
@@ -282,6 +353,7 @@
                     android:text="@string/precoPrin3"
                     android:textColor="@color/labelPrice"
                     android:textStyle="bold" />
+
 
             </LinearLayout>
 
@@ -350,6 +422,7 @@
                     android:layout_weight="1"
                     android:text="@string/textBeb2" />
 
+
                 <TextView
                     android:id="@+id/textPrice8"
                     android:layout_width="0dp"
@@ -381,6 +454,16 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:text="@string/textBeb3" />
+
+                <ImageView
+                    android:id="@+id/iconeTempo7"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/rapido"
+                    android:src="@drawable/ic_tempo"
+                    android:contentDescription="@string/iconDescription"/>
 
                 <TextView
                     android:id="@+id/textPrice9"
@@ -433,6 +516,16 @@
                     android:layout_weight="1"
                     android:text="@string/textSob1" />
 
+                <ImageView
+                    android:id="@+id/iconeTempo8"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/rapido"
+                    android:src="@drawable/ic_tempo"
+                    android:contentDescription="@string/iconDescription"/>
+
                 <TextView
                     android:id="@+id/textPrice10"
                     android:layout_width="0dp"
@@ -465,6 +558,16 @@
                     android:layout_weight="1"
                     android:text="@string/textSob2" />
 
+                <ImageView
+                    android:id="@+id/iconeTempo9"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/medio"
+                    android:src="@drawable/ic_tempo"
+                    android:contentDescription="@string/iconDescription"/>
+
                 <TextView
                     android:id="@+id/textPrice11"
                     android:layout_width="0dp"
@@ -496,6 +599,16 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:text="@string/textSob3" />
+
+                <ImageView
+                    android:id="@+id/iconeTempo10"
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:tint="@color/demorado"
+                    android:src="@drawable/ic_tempo"
+                    android:contentDescription="@string/iconDescription"/>
 
                 <TextView
                     android:id="@+id/textPrice12"
