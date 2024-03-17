@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">projetoCardapio</string>
+    <string name="app_name">Dolphin Virtual</string>
     <string name="logo">logoDolphin</string>
     <string name="textCabecalho">Cardápio</string>
     <string name="textDescriptionBanner">banner com comidas e frutos do mar como camarões</string>
@@ -8,6 +8,20 @@
     <string name="btnEnt">Entrar</string>
     <string name="btnPedido">Pedir</string>
     <string name="labelPreco">R$.precototal</string>
+
+    //int-checkbox
+    <string name="checkDescription1">caixa de marcação de item 1</string>
+    <string name="checkDescription2">caixa de marcação de item 2</string>
+    <string name="checkDescription3">caixa de marcação de item 3</string>
+    <string name="checkDescription4">caixa de marcação de item 4</string>
+    <string name="checkDescription5">caixa de marcação de item 5 </string>
+    <string name="checkDescription6">caixa de marcação de item 6</string>
+    <string name="checkDescription7">caixa de marcação de item 7</string>
+    <string name="checkDescription8">caixa de marcação de item 8</string>
+    <string name="checkDescription9">caixa de marcação de item 9</string>
+    <string name="checkDescription10">caixa de marcação de item 10</string>
+    <string name="checkDescription11">caixa de marcação de item 11</string>
+    <string name="checkDescription12">caixa de marcação de item 12</string>
 
     //entradas
     <string name="textEntradas">Entradas</string>
@@ -43,11 +57,11 @@
     <string name="textBeb4">Cerveja</string>
 
     //preços
-    <string name="precoEnt1">R$49,90</string>
+    <string name="precoEnt1">R$50,00</string>
     <string name="precoEnt2">R$35,00</string>
     <string name="precoEnt3">R$40,00</string>
 
-    <string name="precoPrin1">R$49,90</string>
+    <string name="precoPrin1">R$50,00</string>
     <string name="precoPrin2">R$60,00</string>
     <string name="precoPrin3">R$35,00</string>
 

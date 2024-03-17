@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".mainApresentacao">
-
+    tools:context=".ApresentacaoApp">
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
@@ -64,6 +63,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@id/viewFinal"
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
@@ -90,7 +90,8 @@
                 <CheckBox
                     android:id="@+id/checkEnt1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription1"/>
 
                 <!-- SEGUNDO MEDIO -->
 
@@ -116,7 +117,8 @@
                     android:id="@+id/checkEnt2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp" />
+                    android:layout_marginStart="10dp"
+                    android:contentDescription="@string/checkDescription2"/>
 
                 <TextView
                     android:id="@+id/textEntrada2"
@@ -146,9 +148,10 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/checkEntrada3"
+                    android:id="@+id/checkEnt3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription3"/>
 
                 <TextView
                     android:id="@+id/textEntrada3"
@@ -192,7 +195,8 @@
                 <CheckBox
                     android:id="@+id/checkPrato1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription4"/>
 
                 <TextView
                     android:id="@+id/textPrato1"
@@ -215,7 +219,8 @@
                 <CheckBox
                     android:id="@+id/checkPrato2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription5"/>
 
                 <TextView
                     android:id="@+id/textPrato2"
@@ -244,7 +249,8 @@
                 <CheckBox
                     android:id="@+id/checkPrato3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription6"/>
 
                 <TextView
                     android:id="@+id/textPrato3"
@@ -288,7 +294,8 @@
                 <CheckBox
                     android:id="@+id/checkBeb1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription7"/>
 
                 <TextView
                     android:id="@+id/textBeb1"
@@ -319,7 +326,8 @@
                 <CheckBox
                     android:id="@+id/checkBeb2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription8"/>
 
                 <TextView
                     android:id="@+id/textBeb2"
@@ -350,7 +358,8 @@
                 <CheckBox
                     android:id="@+id/checkBeb3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription9"/>
 
                 <TextView
                     android:id="@+id/textBeb3"
@@ -400,7 +409,8 @@
                 <CheckBox
                     android:id="@+id/checkSob1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription10"/>
 
                 <TextView
                     android:id="@+id/textSob1"
@@ -431,7 +441,8 @@
                 <CheckBox
                     android:id="@+id/checkSob2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription11"/>
 
                 <TextView
                     android:id="@+id/textSob2"
@@ -462,7 +473,8 @@
                 <CheckBox
                     android:id="@+id/checkSob3"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/checkDescription12"/>
 
                 <TextView
                     android:id="@+id/textSob3"
@@ -492,7 +504,7 @@
     <View
         android:id="@+id/viewFinal"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="48dp"
         android:background="@color/mainApp"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView"
         app:layout_constraintStart_toStartOf="parent" />
@@ -502,29 +514,24 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:text="@string/labelPreco"
         android:textColor="@color/white"
         android:layout_marginStart="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView"
         app:layout_constraintStart_toStartOf="@+id/viewFinal"
         app:layout_constraintTop_toTopOf="@+id/viewFinal" />
-    
+
     <Button
         android:id="@+id/btnPedido"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
+        android:layout_gravity="start"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="@color/buttonPedido"
         android:text="@string/btnPedido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/viewFinal"
         app:layout_constraintTop_toTopOf="@+id/viewFinal"
-        android:layout_marginEnd="30dp" />
-    </Button>
-
-    
-
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

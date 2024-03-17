@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         btnClickMe.setOnClickListener {
             //Here MainActivity.this is a Current Class Reference (context)
             // Código para passar para a tela MainApresentacao
-            val intent = Intent(this, mainApresentacao::class.java)
+            val intent = Intent(this, ApresentacaoApp::class.java)
             startActivity(intent)
         }
     }
