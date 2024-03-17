@@ -52,9 +52,8 @@
     //bebidas
     <string name="textBebidas">Bebidas</string>
     <string name="textBeb1">Refrigerante</string>
-    <string name="textBeb2">Chá</string>
+    <string name="textBeb2">Cerveja</string>
     <string name="textBeb3">Suco (Copo)</string>
-    <string name="textBeb4">Cerveja</string>
 
     //preços
     <string name="precoEnt1">R$50,00</string>
