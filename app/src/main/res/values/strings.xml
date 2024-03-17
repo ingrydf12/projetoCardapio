@@ -7,7 +7,7 @@
     //interações
     <string name="btnEnt">Entrar</string>
     <string name="btnPedido">Pedir</string>
-    <string name="labelPreco">R$.precototal</string>
+    <string name="labelPreco">R$ %d</string>
 
     //int-checkbox
     <string name="checkDescription1">caixa de marcação de item 1</string>
@@ -41,7 +41,7 @@
 
     <string name="textPrato1">Nhoque de camarão</string>
     <string name="textPrato2">Tilápia ao Molho Teriyaki</string>
-    <string name="textPrato3">Algo caro</string>
+    <string name="textPrato3">Caranguejo</string>
 
     //sobremesas
     <string name="textSobremesas">Sobremesas</string>

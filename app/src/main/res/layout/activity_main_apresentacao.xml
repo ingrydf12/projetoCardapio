@@ -515,8 +515,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textColor="@color/white"
-        android:layout_marginStart="40dp"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+        android:fontFamily="@font/inter_bold"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewFinal"
+        app:layout_constraintEnd_toStartOf="@+id/btnPedido"
         app:layout_constraintStart_toStartOf="@+id/viewFinal"
         app:layout_constraintTop_toTopOf="@+id/viewFinal" />
 
