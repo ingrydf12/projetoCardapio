@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ProjetoCardapio"
         tools:targetApi="31">
         <activity
+            android:name=".TelaConfirmar"
+            android:exported="false" />
+        <activity
             android:name=".ApresentacaoApp"
             android:exported="false" />
         <activity

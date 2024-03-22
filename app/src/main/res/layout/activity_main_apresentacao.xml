@@ -19,13 +19,16 @@
         android:id="@+id/textDolphin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/textDolphin"
         android:fontFamily="@font/inter_bold"
+        android:text="@string/textCom"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
@@ -33,8 +36,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:text="@string/textCabecalho"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
+        android:textColor="#E6CF73"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,6 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textEntrada1" />
 
                 <ImageView
@@ -155,6 +159,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textEntrada2" />
 
                 <ImageView
@@ -196,6 +201,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|start"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textEntrada3" />
 
                 <ImageView
@@ -251,6 +257,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="start|center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textPrato1" />
 
                 <ImageView
@@ -292,6 +299,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|start"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textPrato2" />
 
                 <ImageView
@@ -332,6 +340,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textPrato3" />
 
                 <ImageView
@@ -388,6 +397,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textBeb1" />
 
                 <TextView
@@ -420,6 +430,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textBeb2" />
 
 
@@ -453,6 +464,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textBeb3" />
 
                 <ImageView
@@ -514,6 +526,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textSob1" />
 
                 <ImageView
@@ -556,6 +569,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textSob2" />
 
                 <ImageView
@@ -598,6 +612,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:textAppearance="@style/itens"
                     android:text="@string/textSob3" />
 
                 <ImageView
@@ -650,11 +665,11 @@
     <!-- Botão de Pedido -->
     <Button
         android:id="@+id/btnPedido"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="141dp"
+        android:layout_height="39dp"
         android:layout_gravity="start"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/buttonPedido"
+        android:backgroundTint="@color/colorButtons"
         android:text="@string/btnPedido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/viewFinal"
