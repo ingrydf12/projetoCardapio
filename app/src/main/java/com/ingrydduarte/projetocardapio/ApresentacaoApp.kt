@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.RelativeLayout
 import android.widget.TextView
 import com.ingrydduarte.projetocardapio.databinding.ActivityMainApresentacaoBinding
 import android.widget.Toast
@@ -11,7 +12,7 @@ import android.widget.Toast
 class ApresentacaoApp : AppCompatActivity() {
     // declarações de variáveis
     private lateinit var textoLabel: TextView
-    private lateinit var btnPedir: Button
+    private lateinit var btnPedir: RelativeLayout
     private lateinit var binding: ActivityMainApresentacaoBinding
     private var total: Int = 0 // Variável para armazenar o total
     private var identificarCheck: Boolean = false

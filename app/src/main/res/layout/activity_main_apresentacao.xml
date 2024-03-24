@@ -653,15 +653,16 @@
 
     </ScrollView>
 
-    <!-- Label Preço -->
+    <!-- Retângulo final -->
     <View
         android:id="@+id/viewFinal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
         android:background="@color/mainApp"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
+    <!-- Label Preço -->
     <TextView
         android:id="@+id/labelTotal"
         android:layout_width="0dp"
@@ -674,17 +675,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView" />
     <!-- Botão de Pedido -->
-    <Button
+    <RelativeLayout
         android:id="@+id/btnPedido"
-        android:layout_width="180dp"
-        android:layout_height="39dp"
-        android:layout_gravity="center|start"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/colorButtons"
-        android:text="@string/btnPedido"
-        android:textAppearance="@style/buttonPedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/buttonpedido"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/viewFinal"
-        app:layout_constraintTop_toTopOf="@+id/viewFinal"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
