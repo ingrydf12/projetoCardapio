@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".TelaConfirmar">
 
     <View
@@ -42,6 +43,64 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/rectCima" />
 
+    <TextView
+        android:id="@+id/txtPedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/txtPedidos"
+        android:textAppearance="@style/stlTelaFinal"
+        app:layout_constraintBottom_toTopOf="@+id/rectBaixo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectCima"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <TextView
+        android:id="@+id/txtVDados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/itens"
+        app:layout_constraintBottom_toTopOf="@+id/txtPedidos2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPedidos"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <TextView
+        android:id="@+id/txtPedidos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="top"
+        android:text="@string/Obs"
+        android:textAppearance="@style/stlTelaFinal"
+        app:layout_constraintBottom_toTopOf="@+id/rectBaixo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectCima"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/InstObs"
+        android:textAppearance="@style/labelPedidos"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectBaixo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPedidos2"
+        app:layout_constraintVertical_bias="0.058" />
+
     <View
         android:id="@+id/rectBaixo"
         android:layout_width="wrap_content"
@@ -62,5 +121,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/rectBaixo"
         app:layout_constraintTop_toTopOf="@+id/rectBaixo" />
+
+    <TextView
+        android:id="@+id/txtPedidoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/txtPedidos2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toEndOf="@+id/txtPedidos"
+        app:layout_constraintTop_toBottomOf="@+id/rectCima"
+        app:layout_constraintVertical_bias="0.07" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,6 +11,7 @@
     <string name="btnPedido">Pedir</string>
     <string name="labelPreco">R$ %d</string>
     <string name="ConfirmarPedido">Confirme seu pedido</string>
+    <string name="txtPedidos">O seu pedido:</string>
 
     //int-checkbox
     <string name="checkDescription1">caixa de marcação de item 1</string>
@@ -81,8 +82,15 @@
 
     <string name="textReturn"> </string>
     <string name="textNull">Nada selecionado.</string>
+    <string name="textPedidoTotal"></string>
 
     //styles
+    <style name="buttonPedir">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
     <style name="ConfirmarPedido">
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">#FFFFFF</item>
@@ -91,9 +99,24 @@
 
     <style name="itens">
         <item name="android:textSize">15sp</item>
-        <item name="android:textColor">#000000</item>
-        <item name="android:fontFamily">@font/interItem</item>
+        <item name="android:textColor">#9C27B0</item>
+        <item name="android:fontFamily">@font/interitens</item>
     </style>
 
+    <style name="stlTelaFinal">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="labelPedidos">
+        <item name="fontFamily">@font/interitens</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textCategoria</item>
+    </style>
+
+    <style name="Precos">
+        <item name="android:textSize">18sp</item>
+    </style>
 
 </resources>
