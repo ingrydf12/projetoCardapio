@@ -3,6 +3,7 @@ package com.ingrydduarte.projetocardapio
 //import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -10,9 +11,9 @@ import com.ingrydduarte.projetocardapio.databinding.ActivityTelaConfirmarBinding
 
 class TelaConfirmar : AppCompatActivity() {
     private lateinit var binding: ActivityTelaConfirmarBinding
-    private lateinit var btnConfirmado: RelativeLayout
+    private lateinit var btnConfirmado: Button
     private lateinit var btnVolte: RelativeLayout
-    private lateinit var labelPreco: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -82,7 +82,8 @@
 
     <string name="textReturn"> </string>
     <string name="textNull">Nada selecionado.</string>
-    <string name="textPedidoTotal"></string>
+    <string name="textPedidoTotal">R$ %d</string>
+
 
     //styles
     <style name="buttonPedir">
@@ -113,10 +114,12 @@
         <item name="fontFamily">@font/interitens</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/textCategoria</item>
+        <item name="android:textColorHint">#000000</item>
     </style>
 
     <style name="Precos">
         <item name="android:textSize">18sp</item>
     </style>
 
+<string name="teste">Confirmar pedido</string>
 </resources>

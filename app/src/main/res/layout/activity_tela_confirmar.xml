@@ -91,9 +91,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/InstObs"
-        android:textAppearance="@style/labelPedidos"
         android:inputType="text"
         android:minHeight="48dp"
+        android:textAppearance="@style/labelPedidos"
         app:layout_constraintBottom_toTopOf="@+id/rectBaixo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -111,12 +111,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <RelativeLayout
+    <Button
         android:id="@+id/btnconfirma"
-        android:layout_width="170dp"
-        android:layout_height="39dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@drawable/btnconfirmar"
+        android:text="@string/teste"
         app:layout_constraintBottom_toBottomOf="@+id/rectBaixo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/rectBaixo"

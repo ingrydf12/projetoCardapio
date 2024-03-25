@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-
     tools:context=".ApresentacaoApp">
 
     <View
@@ -17,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textDolphin"
+        android:id="@+id/textOrdem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
@@ -129,7 +128,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/rapido" />
 
                 <TextView
@@ -140,7 +139,8 @@
                     android:gravity="center"
                     android:text="@string/precoEnt1"
                     android:textColor="@color/labelPrice"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Precos"/>
 
             </LinearLayout>
 
@@ -170,7 +170,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/medio" />
 
                 <TextView
@@ -181,7 +181,8 @@
                     android:gravity="center"
                     android:text="@string/precoEnt2"
                     android:textColor="@color/labelPrice"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Precos"/>
             </LinearLayout>
 
             <LinearLayout
@@ -212,7 +213,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/demorado" />
 
                 <TextView
@@ -223,7 +224,8 @@
                     android:gravity="center"
                     android:text="@string/precoEnt3"
                     android:textColor="@color/labelPrice"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textAppearance="@style/Precos"/>
 
             </LinearLayout>
 
@@ -268,7 +270,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/rapido" />
 
                 <TextView
@@ -311,7 +313,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/medio" />
 
                 <TextView
@@ -354,7 +356,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/demorado" />
 
                 <TextView
@@ -481,7 +483,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/rapido" />
 
                 <TextView
@@ -544,7 +546,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/rapido" />
 
                 <TextView
@@ -588,7 +590,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/medio" />
 
                 <TextView
@@ -632,7 +634,7 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/iconDescription"
-                    android:src="@drawable/ic_tempo"
+                    android:src="@drawable/icontempo"
                     app:tint="@color/demorado" />
 
                 <TextView
@@ -675,13 +677,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView" />
     <!-- Botão de Pedido -->
-    <RelativeLayout
+    <Button
         android:id="@+id/btnPedido"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/buttonpedido"
+        android:text="@string/btnPedido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView" />
