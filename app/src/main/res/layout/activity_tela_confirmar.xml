@@ -17,9 +17,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
-        style="@style/txtConfirmaPedido"
         android:id="@+id/txtConfirme"
+        style="@style/txtConfirmaPedido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -28,20 +29,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/rectCima"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/rectCima"
-        app:layout_constraintTop_toTopOf="@+id/rectCima" />
-
-    <RelativeLayout
-        android:id="@+id/btnvoltar"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="68dp"
-        android:background="@drawable/btnvoltar"
-        app:layout_constraintBottom_toBottomOf="@+id/rectCima"
-        app:layout_constraintEnd_toStartOf="@+id/txtConfirme"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/rectCima" />
+        app:layout_constraintTop_toTopOf="@+id/rectCima"
+        app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         style="@style/textGeral"

@@ -4,7 +4,6 @@ package com.ingrydduarte.projetocardapio
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
 import com.ingrydduarte.projetocardapio.databinding.ActivityTelaConfirmarBinding
@@ -12,7 +11,6 @@ import com.ingrydduarte.projetocardapio.databinding.ActivityTelaConfirmarBinding
 class TelaConfirmar : AppCompatActivity() {
     private lateinit var binding: ActivityTelaConfirmarBinding
     private lateinit var btnConfirmado: Button
-    private lateinit var btnVolte: RelativeLayout
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,7 +22,6 @@ class TelaConfirmar : AppCompatActivity() {
         //referenciando o botão confirmar
         btnConfirmado = binding.btnconfirma
         //referenciando o botão de voltar
-        btnVolte = binding.btnvoltar
         // Recupera os textos dos TextViews da tela anterior
         val stringsChecks = intent.getStringArrayListExtra("stringsChecks")
 
@@ -39,8 +36,8 @@ class TelaConfirmar : AppCompatActivity() {
         }
 
         //evento botão de volta
-        btnVolte.setOnClickListener {
+        /*btnVolte.setOnClickListener {
             finish() //finaliza a atividade atual e volta a anterior
-        }
+        }*/
     }
 }

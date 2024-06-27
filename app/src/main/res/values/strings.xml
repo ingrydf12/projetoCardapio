@@ -12,6 +12,7 @@
     <string name="labelPreco">R$ %d</string>
     <string name="ConfirmarPedido">Confirme seu pedido</string>
     <string name="txtPedidos">O seu pedido:</string>
+    <string name="txtVoltar">Voltar</string>
 
     //int-checkbox
     <string name="checkDescription1">caixa de marcação de item 1</string>
