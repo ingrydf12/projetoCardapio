@@ -4,27 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSurface"
+    style="@style/BACKGROUND"
     tools:context=".TelaConfirmar">
 
     <View
+        style="@style/ViewCor"
         android:id="@+id/rectCima"
         android:layout_width="wrap_content"
         android:layout_height="110dp"
         android:layout_alignParentTop="true"
-        android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        style="@style/txtConfirmaPedido"
         android:id="@+id/txtConfirme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:gravity="top"
         android:text="@string/ConfirmarPedido"
-        android:textAppearance="@style/ConfirmarPedido"
         app:layout_constraintBottom_toBottomOf="@+id/rectCima"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/rectCima"
@@ -44,13 +44,13 @@
         app:layout_constraintStart_toStartOf="@+id/rectCima" />
 
     <TextView
+        style="@style/textGeral"
         android:id="@+id/txtPedidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:gravity="top"
         android:text="@string/txtPedidos"
-        android:textAppearance="@style/stlTelaFinal"
         app:layout_constraintBottom_toTopOf="@+id/rectBaixo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
@@ -72,13 +72,13 @@
         app:layout_constraintVertical_bias="0.032" />
 
     <TextView
+        style="@style/textGeral"
         android:id="@+id/txtPedidos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:gravity="top"
         android:text="@string/Obs"
-        android:textAppearance="@style/stlTelaFinal"
         app:layout_constraintBottom_toTopOf="@+id/rectBaixo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
@@ -87,13 +87,13 @@
         app:layout_constraintVertical_bias="0.594" />
 
     <EditText
+        style="@style/labelPedidos"
         android:id="@+id/inputEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/InstObs"
         android:inputType="text"
         android:minHeight="48dp"
-        android:textAppearance="@style/labelPedidos"
         app:layout_constraintBottom_toTopOf="@+id/rectBaixo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -102,23 +102,22 @@
         app:layout_constraintVertical_bias="0.058" />
 
     <View
+        style="@style/ViewCor"
         android:id="@+id/rectBaixo"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
         android:layout_alignParentTop="true"
-        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        style="@style/BUTTON"
         android:id="@+id/btnconfirma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:text="@string/teste"
-        android:textColor="@color/colorOnSecondary"
-        android:backgroundTint="@color/colorSecondary"
         app:layout_constraintBottom_toBottomOf="@+id/rectBaixo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/rectBaixo"

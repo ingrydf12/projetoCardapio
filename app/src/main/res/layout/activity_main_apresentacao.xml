@@ -4,24 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSurface"
+    style="@style/BACKGROUND"
     tools:context=".ApresentacaoApp">
 
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:background="@color/colorPrimary"
+        style="@style/ViewCor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        style="@style/Destaque"
         android:id="@+id/textOrdem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
         android:text="@string/textCom"
-        android:textColor="@color/colorAccent"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -51,21 +50,28 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/textDescriptionBanner"
         android:scaleType="fitXY"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:srcCompat="@drawable/banner" />
 
+    <View
+        android:id="@+id/viewOrder"
+        style="@style/ViewCor"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bannerView" />
+
     <TextView
+        style="@style/Destaque"
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/inter_bold"
         android:gravity="center"
-        android:background="@color/colorPrimary"
         android:text="@string/textInst"
-        android:textColor="@color/colorAccent"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,13 +96,14 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/textGeral"
                 android:id="@+id/textViewEntradas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/inter_bold"
+                android:layout_marginTop="15dp"
                 android:text="@string/textEntradas"
-                android:textColor="@color/colorOnSecondary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
             <!-- Primeira linha -->
@@ -133,15 +140,13 @@
                     app:tint="@color/rapido" />
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice1"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/precoEnt1"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/Precos"/>
+                    android:text="@string/precoEnt1" />
 
             </LinearLayout>
 
@@ -175,15 +180,13 @@
                     app:tint="@color/medio" />
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/precoEnt2"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/Precos"/>
+                    android:text="@string/precoEnt2"/>
             </LinearLayout>
 
             <LinearLayout
@@ -218,30 +221,26 @@
                     app:tint="@color/demorado" />
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice3"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/precoEnt3"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/Precos"/>
+                    android:text="@string/precoEnt3" />
 
             </LinearLayout>
 
             <!-- Pratos PRINCIPAIS TEXTO -->
             <TextView
+                style="@style/textGeral"
                 android:id="@+id/textViewPrincipal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/inter_bold"
-                android:text="@string/textPratos"
-                android:textColor="@color/colorOnSecondary"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/textPratos" />
 
             <!-- Pratos Principais -->
             <LinearLayout
@@ -275,15 +274,13 @@
                     app:tint="@color/rapido" />
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice4"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/precoPrin1"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textAppearance="@style/Precos"
-                    android:textStyle="bold" />
+                    android:text="@string/precoPrin1" />
 
             </LinearLayout>
 
@@ -299,13 +296,13 @@
                     android:contentDescription="@string/checkDescription5" />
 
                 <TextView
+                    style="@style/itens"
                     android:id="@+id/textPrato2"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|start"
                     android:layout_weight="1"
-                    android:text="@string/textPrato2"
-                    android:textAppearance="@style/itens" />
+                    android:text="@string/textPrato2" />
 
                 <ImageView
                     android:id="@+id/iconeTempo5"
@@ -318,15 +315,13 @@
                     app:tint="@color/medio" />
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice5"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/precoPrin2"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/Precos"/>
+                    android:text="@string/precoPrin2"/>
 
             </LinearLayout>
 
@@ -361,21 +356,20 @@
                     app:tint="@color/demorado" />
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice6"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:layout_weight="1"
-                    android:text="@string/precoPrin3"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/Precos"/>
+                    android:text="@string/precoPrin3" />
 
 
             </LinearLayout>
 
             <!-- Bebidas TEXTO -->
             <TextView
+                style="@style/textGeral"
                 android:id="@+id/textViewBebidas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -383,9 +377,7 @@
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="@string/textBebidas"
-                android:textColor="@color/colorOnSecondary"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+ />
 
             <!-- Bebida 1 -->
             <LinearLayout
@@ -409,15 +401,14 @@
                     android:textAppearance="@style/itens" />
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice7"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoBeb1"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textStyle="bold"
-                    android:textAppearance="@style/Precos"/>
+                    />
 
             </LinearLayout>
 
@@ -444,15 +435,14 @@
 
 
                 <TextView
+                    style="@style/Precos"
                     android:id="@+id/textPrice8"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoBeb2"
-                    android:textAppearance="@style/Precos"
-                    android:textColor="@color/colorOnSecondary"
-                    android:textStyle="bold" />
+                    />
 
             </LinearLayout>
 
@@ -506,16 +496,14 @@
                 android:layout_height="wrap_content" />
 
             <TextView
+                style="@style/textGeral"
                 android:id="@+id/textViewSobremesas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/inter_bold"
-                android:text="@string/textSobremesas"
-                android:textColor="@color/colorOnSecondary"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:text="@string/textSobremesas" />
 
             <!-- Sobremesas Área -->
             <!-- Sobremesa 1 -->
@@ -654,35 +642,33 @@
 
     <!-- Retângulo final -->
     <View
+        style="@style/ViewCor"
         android:id="@+id/viewFinal"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
     <!-- Label Preço -->
     <TextView
+        style="@style/Destaque"
         android:id="@+id/labelTotal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:fontFamily="@font/inter_bold"
-        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnPedido"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView" />
     <!-- Botão de Pedido -->
     <Button
+        style="@style/BUTTON"
         android:id="@+id/btnPedido"
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="20dp"
         android:text="@string/btnPedido"
-        android:textColor="@color/colorOnSecondary"
-        android:backgroundTint="@color/colorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView" />

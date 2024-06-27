@@ -3,19 +3,74 @@
     <style name="Base.Theme.ProjetoCardapio" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- Primary brand color -->
-        <item name="colorPrimary">#004080</item>
-        <item name="colorPrimaryVariant">#003366</item>
-        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
         <!-- Secondary brand color -->
-        <item name="colorSecondary">#40E0D0</item>
-        <item name="colorSecondaryVariant">#30BFBF</item>
-        <item name="colorOnSecondary">#000000</item>
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
         <!-- Background color -->
-        <item name="android:colorBackground">#FFFFFF</item>
-        <item name="colorSurface">#FFFFFF</item>
-        <item name="colorOnSurface">#004080</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorSurface">@color/colorSurface</item>
+        <item name="colorOnSurface">@color/colorOnSurface</item>
         <!-- Highlight color -->
-        <item name="colorAccent">#FFEA95</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BACKGROUND">
+        <item name="android:background">@color/colorSurface</item>
+    </style>
+
+    <style name="HOME_BACKGROUND">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="ViewCor">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="TEXTCOLOR">
+        <item name="android:textColor">@color/colorOnSecondary</item>
+    </style>
+
+    <style name="Destaque">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="BUTTON">
+        <item name="android:backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+    </style>
+
+    <style name="textGeral">
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="itens">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/colorItem</item>
+        <item name="android:fontFamily">@font/interitens</item>
+    </style>
+
+    <style name="Precos">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="labelPedidos">
+        <item name="fontFamily">@font/interitens</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:textColorHint">@color/colorOnHintLight</item>
+    </style>
+
+    <style name="txtConfirmaPedido">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
     </style>
 
     <style name="Theme.ProjetoCardapio" parent="Base.Theme.ProjetoCardapio" />

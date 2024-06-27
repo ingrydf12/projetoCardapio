@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Light Theme -->
         <color name="colorPrimary">#004080</color>
-        <color name="colorPrimaryVariant">#003366</color>
         <color name="colorOnPrimary">#FFFFFF</color>
         <color name="colorSecondary">#40E0D0</color>
-        <color name="colorSecondaryVariant">#30BFBF</color>
         <color name="colorOnSecondary">#000000</color>
         <color name="colorBackground">#FFFFFF</color>
         <color name="colorSurface">#F0F0F0</color>
         <color name="colorOnSurface">#004080</color>
         <color name="colorAccent">#F3E199</color>
+        <color name="colorItem">#9C27B0</color>
 
+    <!-- Dark Theme -->
+        <color name="corPrimary">#001F3F</color>
+        <color name="corSecundaria">#ADABFF</color>
+        <color name="corFundo">#001F3F</color>
+        <color name="corSuperficie">#303030</color>
+        <color name="corNaSuperficie">#FFFFFF</color>
+        <color name="corDestaque">#EAFF4A</color>
+        <color name="corItem">#8CE83C</color>
 
     //icones
     <color name="rapido">#008301</color>
     <color name="medio">#FFC107</color>
     <color name="demorado">#C80000</color>
+
+    //hint
+    <color name="colorOnHintDark">#80FFFFFF</color>
+    <color name="colorOnHintLight">#80000000</color>
 </resources>
