@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/colorSurface"
     tools:context=".ApresentacaoApp">
 
     <View
         android:id="@+id/view"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:background="@color/mainApp"
+        android:background="@color/colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:text="@string/textCom"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:text="@string/textCabecalho"
-        android:textColor="#E6CF73"
+        android:textColor="@color/colorOnPrimary"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view"
@@ -63,8 +63,9 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:gravity="center"
+        android:background="@color/colorPrimary"
         android:text="@string/textInst"
-        android:textColor="@color/textInst"
+        android:textColor="@color/colorAccent"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,7 +96,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/inter_bold"
                 android:text="@string/textEntradas"
-                android:textColor="@color/textCategoria"
+                android:textColor="@color/colorOnSecondary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
             <!-- Primeira linha -->
@@ -138,7 +139,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoEnt1"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -180,7 +181,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoEnt2"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
             </LinearLayout>
@@ -223,7 +224,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoEnt3"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -238,7 +239,7 @@
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="@string/textPratos"
-                android:textColor="@color/textCategoria"
+                android:textColor="@color/colorOnSecondary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -280,7 +281,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoPrin1"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textAppearance="@style/Precos"
                     android:textStyle="bold" />
 
@@ -323,7 +324,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoPrin2"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -366,7 +367,7 @@
                     android:gravity="center"
                     android:layout_weight="1"
                     android:text="@string/precoPrin3"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -382,7 +383,7 @@
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="@string/textBebidas"
-                android:textColor="@color/textCategoria"
+                android:textColor="@color/colorOnSecondary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -414,7 +415,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoBeb1"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -450,7 +451,7 @@
                     android:gravity="center"
                     android:text="@string/precoBeb2"
                     android:textAppearance="@style/Precos"
-                    android:textColor="@color/labelPrice"
+                    android:textColor="@color/colorOnSecondary"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -493,7 +494,6 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="@string/precoBeb3"
-                    android:textColor="@color/labelPrice"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -513,7 +513,7 @@
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="@string/textSobremesas"
-                android:textColor="@color/textCategoria"
+                android:textColor="@color/colorOnSecondary"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -556,7 +556,6 @@
                     android:gravity="center"
                     android:layout_weight="1"
                     android:text="@string/precoSob1"
-                    android:textColor="@color/labelPrice"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -600,7 +599,6 @@
                     android:gravity="center"
                     android:layout_weight="1"
                     android:text="@string/precoSob2"
-                    android:textColor="@color/labelPrice"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -644,7 +642,6 @@
                     android:gravity="center"
                     android:layout_weight="1"
                     android:text="@string/precoSob3"
-                    android:textColor="@color/labelPrice"
                     android:textStyle="bold"
                     android:textAppearance="@style/Precos"/>
 
@@ -660,7 +657,7 @@
         android:id="@+id/viewFinal"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:background="@color/mainApp"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -671,7 +668,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:fontFamily="@font/inter_bold"
-        android:textColor="@color/white"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnPedido"
         app:layout_constraintStart_toStartOf="parent"
@@ -684,6 +681,8 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="20dp"
         android:text="@string/btnPedido"
+        android:textColor="@color/colorOnSecondary"
+        android:backgroundTint="@color/colorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView" />

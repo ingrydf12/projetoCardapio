@@ -2,7 +2,20 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ProjetoCardapio" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#004080</item>
+        <item name="colorPrimaryVariant">#003366</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#40E0D0</item>
+        <item name="colorSecondaryVariant">#30BFBF</item>
+        <item name="colorOnSecondary">#000000</item>
+        <!-- Background color -->
+        <item name="android:colorBackground">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#004080</item>
+        <!-- Highlight color -->
+        <item name="colorAccent">#FFEA95</item>
     </style>
 
     <style name="Theme.ProjetoCardapio" parent="Base.Theme.ProjetoCardapio" />

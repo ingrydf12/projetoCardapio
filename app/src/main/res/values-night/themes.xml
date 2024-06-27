@@ -2,6 +2,21 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ProjetoCardapio" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#001F3F</item>
+        <item name="colorPrimaryVariant">#001530</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#40E0D0</item>
+        <item name="colorSecondaryVariant">#30BFBF</item>
+        <item name="colorOnSecondary">#000000</item>
+        <!-- Background color -->
+        <item name="android:colorBackground">#001F3F</item>
+        <item name="colorSurface">#303030</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <!-- Highlight color -->
+        <item name="colorAccent">#FFD700</item>
     </style>
+
+    <style name="Theme.ProjetoCardapio" parent="Base.Theme.ProjetoCardapio" />
 </resources>

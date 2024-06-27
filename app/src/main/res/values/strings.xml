@@ -113,8 +113,8 @@
     <style name="labelPedidos">
         <item name="fontFamily">@font/interitens</item>
         <item name="android:textSize">18sp</item>
-        <item name="android:textColor">@color/textCategoria</item>
-        <item name="android:textColorHint">#000000</item>
+        <item name="android:textColor">@color/colorOnSecondary</item>
+        <item name="android:textColorHint">@color/colorOnSecondary</item>
     </style>
 
     <style name="Precos">

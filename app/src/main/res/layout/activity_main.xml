@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:backgroundTint="@color/mainApp"
+    android:background="@color/colorSurface"
+    android:backgroundTint="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/inter_bold"
         android:text="BEM-VINDO!"
-        android:textColor="@color/white"
+        android:textColor="@color/colorOnPrimary"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btentrada"
@@ -43,6 +43,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:text="@string/btnEnt"
+        android:textColor="@color/colorOnSecondary"
+        android:backgroundTint="@color/colorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

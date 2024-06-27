@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="white">#FFFFFFFF</color>
-    <color name="textCategoria">#6440CE</color>
-    <color name="mainApp">#26273C</color>
-    <color name="labelPrice">#DA0000</color>
-    <color name="colorButtons">#980000</color>
-    <color name="textInst">#030303</color>
+        <color name="colorPrimary">#004080</color>
+        <color name="colorPrimaryVariant">#003366</color>
+        <color name="colorOnPrimary">#FFFFFF</color>
+        <color name="colorSecondary">#40E0D0</color>
+        <color name="colorSecondaryVariant">#30BFBF</color>
+        <color name="colorOnSecondary">#000000</color>
+        <color name="colorBackground">#FFFFFF</color>
+        <color name="colorSurface">#F0F0F0</color>
+        <color name="colorOnSurface">#004080</color>
+        <color name="colorAccent">#F3E199</color>
+
 
     //icones
     <color name="rapido">#008301</color>
